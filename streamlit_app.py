@@ -10,6 +10,10 @@ st.set_page_config(
 
 st.title("📩 Spam Email Detector")
 
+st.markdown("---")
+
+st.caption("Built using Machine Learning + NLP")
+
 st.write("AI-powered spam/ham classifier")
 
 message = st.text_area("Enter your message")
