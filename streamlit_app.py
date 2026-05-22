@@ -31,8 +31,10 @@ if st.button("Predict"):
 
         st.subheader(f"Prediction: {result}")
 
+        st.progress(float(confidence))
+
         st.write(
-            f"Confidence: {round(confidence * 100, 2)}%"
+            f"Confidence Score: {round(confidence * 100, 2)}%"
         )
 
         if result == "SPAM":
